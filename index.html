@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sad — Mayday Parade</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Background (band members) -->
+  <div class="bg" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <main class="stage">
+    <section class="card" role="region" aria-label="Music card">
+      <div class="glow" aria-hidden="true"></div>
+
+      <!-- Album art -->
+      <div class="artWrap">
+        <img
+          class="art"
+          src="https://xatimg.com/image/z6BDe3BI1DZa.jpg"
+          alt="Sad album art"
+          draggable="false"
+        />
+        <div class="artRing" aria-hidden="true"></div>
+      </div>
+
+      <header class="meta">
+        <h1 class="title">Sad</h1>
+        <p class="subtitle">Mayday Parade — <span class="song">One Day At A Time</span></p>
+      </header>
+
+      <!-- YouTube-like player (REAL YouTube embed) -->
+<div class="ytShell" id="ytShell">
+  <div class="ytTop">
+    <div class="np">
+      <span class="npDot" aria-hidden="true"></span>
+      <div class="npText">
+        <div class="npLabel">NOW PLAYING</div>
+        <div class="npTitle">Mayday Parade — One Day At A Time</div>
+      </div>
+    </div>
+    <div class="npBadge">YouTube</div>
+  </div>
+
+  <div class="ytFrame">
+    <iframe
+      id="yt"
+      src="https://www.youtube.com/embed/83oa5fE9f9A?controls=1&rel=0&modestbranding=1&playsinline=1&iv_load_policy=3"
+      title="Mayday Parade - One Day At A Time"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+  </div>
+
+  <button class="ytOverlay" id="ytOverlay" type="button" aria-label="Play video">
+    <span class="playBubble" aria-hidden="true">
+      <span class="tri">▶</span>
+    </span>
+    <span class="overlayText">Click to play</span>
+  </button>
+</div>
+
+      <footer class="hint">
+        Autoplay is often blocked — click once and it will play like normal YouTube.
+      </footer>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
